@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col, Form } from 'react-bootstrap';
+import Total from '../Total/Total';
 
 const Cart = ({ cartCount, setCartCount,handleRemoveFromCart }) => {
 
@@ -19,7 +20,8 @@ const Cart = ({ cartCount, setCartCount,handleRemoveFromCart }) => {
   };
 
   return (
-    <>
+      <>
+      <Total cartCount={cartCount}/>
       {cartCount.map((item) => (
         <Card key={item.id} className="mb-3">
           <Card.Header>{item.category}</Card.Header>

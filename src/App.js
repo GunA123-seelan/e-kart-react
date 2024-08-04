@@ -43,9 +43,9 @@ function App() {
       <Nav.Item>
         <Nav.Link href="/register">Register</Nav.Link>
       </Nav.Item>
-      <Nav.Item>
+      {/* <Nav.Item>
         <Nav.Link href="/axios">Axios</Nav.Link>
-      </Nav.Item>
+      </Nav.Item> */}
       <Nav.Item>
           <Nav.Link href="/cart">
             Cart <Badge variant="light">{cartCount.length}</Badge>
